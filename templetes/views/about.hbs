@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{!-- header file from partials --}}
+        {{>headerlinksstyles}}
+    </head>
+    <body>
+        {{!-- using navbar files from partials compomnet --}}
+        {{!-- to use the file write 2curltbrases and > symbol --}}
+        {{>navbar}}
+
+        {{!-- <!-- Main header --> --}}
+        <div class="container-fluid main_header">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="row">
+                        <!-- left Side -->
+                        <div class="col-md-6 col-12 main_header_right
+                            align-items-center">
+                            <figure>
+                                <img src="../image/a.jpeg" class="img-fluid
+                                    imgs" alt="Intezar-dev" title="Intezar-dev">
+                            </figure>
+                        </div>
+                        <div class="col-md-6 col-12 main_header_left">
+                            <p>Welcome to Field of Technology..</p>
+                            <h1>I'm Front-end <span
+                                    class='clr'>React.Js Developer &
+                                </span><span class="clr2">Designer</span> </h1>
+                            <a href="https://intezar-dev.netlify.app/">
+                                <button>About Me</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        {{!-- Footer file using here --}}
+        {{>footer}}
+    </body>
+</html>

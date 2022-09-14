@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{!-- header file from partials --}}
+        {{>headerlinksstyles}}
+    </head>
+    <body>
+        {{!-- using navbar files from partials compomnet --}}
+        {{!-- to use the file write 2curltbrases and > symbol --}}
+        {{>navbar}}
+
+        {{!-- <!-- Main header --> --}}
+        <div class="container-fluid main_header">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="row">
+                        <!-- left Side -->
+                        <div class="col-md-12 col-12 main_header_left
+                            align-items-center">
+                            <figure class="errimg">
+                                <img src="../image/fr.png" class="img-fluid
+                                    " alt="Intezar-dev" title="Intezar-dev">
+                            </figure>
+                            <p>Welcome to Field of Technology..</p>
+                            <h1>{{errmsg}}</h1>
+                            <a href="/">
+                                <button>Go Back</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        {{!-- Footer file using here --}}
+        {{>footer}}
+    </body>
+</html>
